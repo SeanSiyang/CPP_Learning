@@ -8,9 +8,10 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
+        "-std=c++20",
         "${file}",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${fileDirname}\\exes\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -29,9 +30,10 @@
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g",
+        "-std=c++20",
         "${file}",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${fileDirname}\\exes\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -50,7 +52,7 @@
         "/Zi",
         "/EHsc",
         "/nologo",
-        "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "/Fe${fileDirname}\\exes\\${fileBasenameNoExtension}.exe",
         "${file}"
       ],
       "options": {
