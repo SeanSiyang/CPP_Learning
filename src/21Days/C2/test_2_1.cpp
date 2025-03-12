@@ -2,6 +2,7 @@
 
 int main()
 {
-    std::cout << "Hello Buggy World\n";
+    std::cout << "Is there a bug here?";
+
     return 0;
 }
