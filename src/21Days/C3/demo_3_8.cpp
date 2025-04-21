@@ -1,6 +1,6 @@
 #include <iostream>
 
-constexpr double GetPi() { return  22.0 / 7; }
+constexpr double GetPi() { return 22.0 / 7; }
 constexpr double TwicePi() { return 2 * GetPi(); }
 
 int main()
