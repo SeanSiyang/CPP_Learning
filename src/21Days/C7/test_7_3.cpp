@@ -4,7 +4,7 @@
 #include <cmath>
 
 
-void Calculate(double radius, double &area, double &circum)
+void Calculate(double radius, double& area, double& circum)
 {
     area = M_PI * radius * radius;
     circum = M_PI * radius * 2.0;

@@ -2,7 +2,7 @@
 
 void ProcessArray(double numbers[], int length);
 
-void DisplayArrays(double *myArrs, int length)
+void DisplayArrays(double* myArrs, int length)
 {
     for (int i = 0; i < length; ++i)
     {
