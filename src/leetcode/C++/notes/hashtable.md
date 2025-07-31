@@ -281,7 +281,7 @@ struct Predicate
 };
 ```
 
-完整代码：
+完整代码，以电话簿应用程序为例：
 
 ```c++
 #include <iostream>
@@ -340,5 +340,34 @@ int main() {
     return 0;
 }
 ```
+
+## unordered_map和unordered_multimap
+
+C++11开始，STL支持散列映射：`std::unordered_map`类
+
+需要包含头文件：
+
+```c++
+#include <unordered_map>
+```
+
+unordered_map的平均插入和删除时间是固定的，查找元素都时间也是固定的
+
+散列表可以视为一个键值对集合，根据给定的键，可找到相应的值
+
+相对于简单映射，散列表将键值对存储在桶中，每个桶都有索引，指出了它在散列表中的相对位置（类似数组）
+
+索引可以通过散列函数根据键计算得到
+
+```bash
+Index = HashFunction(key, TableSize)
+```
+
+使用find函数根据键查找元素时，将使用HashFunction计算元素的位置，并返回该位置的值。
+
+如果HashFunction设计不佳，将导致多个元素的索引相同，进而存储在同一个桶中，这样桶就变成了元素列表，这种情况就是之前描述过的冲突
+
+冲突会降低查找速度，使查找时间不再是固定的。
+
 
 
